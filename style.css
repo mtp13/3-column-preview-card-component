@@ -7,6 +7,70 @@
   font-size: 15px;
 }
 
+body {
+  background-color: var(--background-headings-buttons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+  main {
+    max-width: 22rem;
+  }
+}
+
+.card {
+  max-width: 21rem;
+  color: var(--paragraphs);
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+
+.button-sedan {
+    color: var(--bright-orange);
+    border-color: var(--bright-orange);
+}
+
+.button-suv {
+    color: var(--dark-cyan);
+    border-color: var(---dark-cyan);
+}
+
+.button-luxury{
+    color: var(--very-dark-cyan);
+    border-color: var(--very-dark-cyan);
+}
+
+.card button {
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  border: 1px solid;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
