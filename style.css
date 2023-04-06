@@ -103,6 +103,7 @@ main {
   margin-right: 5rem;
   margin-top: 1.3rem;
   cursor: pointer;
+  background-color: var(--background-headings-buttons);
 }
 
 .attribution {
