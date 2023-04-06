@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   background-color: var(--background-headings-buttons);
   font-family: "Lexend Deca", sans-serif;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 main {
@@ -23,7 +23,11 @@ main {
 }
 
 @media (max-width: 800px) {
+  body {
+    justify-content: unset;
+  }
   main {
+    /* min-height: 110vh; */
     flex-direction: column;
   }
 }
