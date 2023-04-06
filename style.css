@@ -8,37 +8,54 @@
 }
 
 body {
-  background-color: var(--background-headings-buttons);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: var(--background-headings-buttons);
   font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
-  body {
-    flex-direction: column;
-  }
   main {
-    max-width: 22rem;
+    flex-direction: column;
   }
 }
 
 .card {
-  max-width: 21rem;
-  color: var(--paragraphs);
+  max-width: 21.7rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.card img {
+  width: 4rem;
+  margin: 1rem;
 }
 
 .card h1 {
   font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--background-headings-buttons);
+  margin: 1rem 0;
 }
 
 .card p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: var(--paragraphs);
 }
 
 .sedan {
   background-color: var(--bright-orange);
+  border-radius: 1rem 0 0 1rem;
 }
 
 .suv {
@@ -47,28 +64,41 @@ body {
 
 .luxury {
   background-color: var(--very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
 }
 
+@media (max-width: 800px) {
+  .sedan {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
 
 .button-sedan {
-    color: var(--bright-orange);
-    border-color: var(--bright-orange);
+  color: var(--bright-orange);
+  border-color: var(--bright-orange);
 }
 
 .button-suv {
-    color: var(--dark-cyan);
-    border-color: var(---dark-cyan);
+  color: var(--dark-cyan);
+  border-color: var(---dark-cyan);
 }
 
-.button-luxury{
-    color: var(--very-dark-cyan);
-    border-color: var(--very-dark-cyan);
+.button-luxury {
+  color: var(--very-dark-cyan);
+  border-color: var(--very-dark-cyan);
 }
 
 .card button {
-  border-radius: 1rem;
-  font-size: 0.8rem;
+  border-radius: 2rem;
+  font-size: 1rem;
   border: 1px solid;
+  padding: 0.9rem;
+  margin-right: 5rem;
+  margin-top: 1.3rem;
+  cursor: pointer;
 }
 
 .attribution {
